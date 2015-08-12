@@ -1,0 +1,29 @@
+.bar-side-menu {
+  background-color: #406b61;
+}
+
+.bar-content {
+  background-color: #406b61;
+}
+
+.button.button-positive {
+  border-color: #406b61;
+  background-color: #406b61;
+  color: #fff;
+}
+
+.item-divider {
+  background-color: #406b61;
+}
+
+.icon-enhanced {
+  color : #162530;
+}
+
+.button {
+    color: #afbb45;
+}
+
+button:active {
+    color: #afbb45;
+}
