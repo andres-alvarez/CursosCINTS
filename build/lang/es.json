@@ -102,7 +102,7 @@
     "mm.login.usernamerequired": "Nombre de usuario obligatorio",
     "mm.login.webservicesnotenabled": "Los servicios web no están habilitados en su sitio. Por favor, contacte a su administrador del sitio Moodle si Usted piensa que se debería habilitar el acceso por dispositivos móviles.",
     "mm.settings.about": "Acerca",
-    "mm.settings.appname": "Curso Virtual {{version}}",
+    "mm.settings.appname": "Curso Virtual 1.0",
     "mm.settings.cacheexpirationtime": "Tiempo de caducidad del caché (mili segundos)",
     "mm.settings.credits": "Créditos",
     "mm.settings.deletesitefiles": "¿Está seguro de que desea borrar todos los archivos descargados de este sitio?",
