@@ -4042,6 +4042,7 @@ angular.module('mm.core.course')
                 module;
             for (var i = 0; i < sections.length; i++) {
                 section = sections[i];
+                console.log(section.name);
                 for (var j = 0; j < section.modules.length; j++) {
                     module = section.modules[i];
                     if (module.id === moduleid) {
