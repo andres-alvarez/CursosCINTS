@@ -3678,6 +3678,9 @@ angular.module('mm.core.login', [])
                 $ionicHistory.clearHistory();
             });
         }
+        // onEnter: function($state) {
+        //     $state.go('mm_login.credentials', {siteurl: 'cints.ucaldas.edu.co/cursovirtual'});
+        // }
     })
     .state('mm_login.credentials', {
         url: '/cred',
@@ -4042,10 +4045,11 @@ angular.module('mm.core.course')
                 module;
             for (var i = 0; i < sections.length; i++) {
                 section = sections[i];
-                console.log(section.name);
+                console.log("", section.name);
                 for (var j = 0; j < section.modules.length; j++) {
                     module = section.modules[i];
                     if (module.id === moduleid) {
+                        console.log(module.id);
                         return module;
                     }
                 }
@@ -4062,7 +4066,7 @@ angular.module('mm.core.course')
         }
         return "img/mod/" + moduleName + ".svg";
     };
-        self.getSection = function(courseid, sectionid, refresh) {
+    self.getSection = function(courseid, sectionid, refresh) {
         var deferred = $q.defer();
         if (sectionid < 0) {
             deferred.reject('Invalid section ID');
@@ -4071,7 +4075,8 @@ angular.module('mm.core.course')
         self.getSections(courseid, refresh).then(function(sections) {
             for (var i = 0; i < sections.length; i++) {
                 if (sections[i].id == sectionid) {
-                    deferred.resolve(sections[i]);
+                    console.log(sections[i]);
+                    deferred.resolve(sections[i])
                     return;
                 }
             }
